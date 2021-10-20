@@ -11,6 +11,8 @@
 		8D51BE84272064F600E6543E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51BE83272064F600E6543E /* ContentView.swift */; };
 		8D51BE86272064F700E6543E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D51BE85272064F700E6543E /* Assets.xcassets */; };
 		8D51BE89272064F700E6543E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D51BE88272064F700E6543E /* Preview Assets.xcassets */; };
+		8D51BE912720656D00E6543E /* SimpleTodoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D51BE8F2720656D00E6543E /* SimpleTodoModel.xcdatamodeld */; };
+		8D51BE94272065FF00E6543E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51BE93272065FF00E6543E /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		8D51BE83272064F600E6543E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8D51BE85272064F700E6543E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D51BE88272064F700E6543E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D51BE902720656D00E6543E /* SimpleTodoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleTodoModel.xcdatamodel; sourceTree = "<group>"; };
+		8D51BE93272065FF00E6543E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,12 @@
 		8D51BE80272064F600E6543E /* SimpleTodo */ = {
 			isa = PBXGroup;
 			children = (
+				8D51BE92272065F100E6543E /* Managers */,
 				8D51BE81272064F600E6543E /* SimpleTodoApp.swift */,
 				8D51BE83272064F600E6543E /* ContentView.swift */,
 				8D51BE85272064F700E6543E /* Assets.xcassets */,
 				8D51BE87272064F700E6543E /* Preview Content */,
+				8D51BE8F2720656D00E6543E /* SimpleTodoModel.xcdatamodeld */,
 			);
 			path = SimpleTodo;
 			sourceTree = "<group>";
@@ -65,6 +71,14 @@
 				8D51BE88272064F700E6543E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D51BE92272065F100E6543E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8D51BE93272065FF00E6543E /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D51BE912720656D00E6543E /* SimpleTodoModel.xcdatamodeld in Sources */,
 				8D51BE84272064F600E6543E /* ContentView.swift in Sources */,
+				8D51BE94272065FF00E6543E /* CoreDataManager.swift in Sources */,
 				8D51BE82272064F600E6543E /* SimpleTodoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +357,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8D51BE8F2720656D00E6543E /* SimpleTodoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8D51BE902720656D00E6543E /* SimpleTodoModel.xcdatamodel */,
+			);
+			currentVersion = 8D51BE902720656D00E6543E /* SimpleTodoModel.xcdatamodel */;
+			path = SimpleTodoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8D51BE76272064F600E6543E /* Project object */;
 }
